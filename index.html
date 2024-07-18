@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MULTI DASHBOARD THEME</title>
+    <title>Dashboard - Zenith</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
@@ -43,15 +43,16 @@
           <div class="dropdown">
             <div class="d-flex align-items-center justify-content-center dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="d-flex">
-                <img class="nav-profile-img primary-bg-color rounded-pill" src="./assets/images/profile-pic.jpg" alt="Profile Image" >
+                <img class="nav-profile-img primary-bg-color rounded-pill" src="./assets/images/avatar-1.png" alt="Profile Image" >
                 <div class="px-2 d-flex flex-column">
                   <a class="fs-16 nav-email">Jitender@wottaweb.com</a>
                   <span class="lh-10 fs-14">Fidenty BV</span>
                 </div>
               </div>
             </div>
-            <ul class="dropdown-menu w-100 mt-3 rounded-0 ms-2 shadow-sm">
-              <li><a class="dropdown-item" href="#">Action</a></li>
+            <ul class="dropdown-menu w-100 mt-3 rounded-0 ms-2 shadow-md border-0 rounded-2">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user menu-icon"></i> <span class="ms-3">Profile</span> </a></li>
+              <li><a class="dropdown-item" href="login.html"><i class="fa-solid fa-right-from-bracket menu-icon"></i><span class="ms-3"> Logout</span> </a></li>
               <li class="nav-item">
                 <div class="border rounded-1 d-flex m-1 p-1 flex-wrap justify-content-evenly">
                     <span class="rounded-1 primary-admin-bg px-3 py-3 me-1 set-theme" set-theme="admin-theme"></span>
@@ -73,24 +74,10 @@
   <div id="sidebar" class="secondary-bg-color sidebar">
     <span class="sidebar-toggle me-1 px-3 py-2 float-end fs-4"><i class="fa-solid fa-bars text-light"></i></span>
         <div class="side-nav p-3 mt-3">
-            <ul class="side-nav-links mt-4">
-                
-                    <li class="side-item">
-                        <a class="side-link" href="/index.html"><i class="fa fa-dashboard menu-icon"></i><span class="side-link-text"> Dashboard</span></a>
-                    </li>
-                    <li class="side-item ">
-                        <a class="side-link" href="/sims.html"><i class="fa fa-file  menu-icon"></i> <span class="side-link-text"> Sims</span></a>
-                    </li>
-                
-                <li class="side-item ">
-                    <a class="side-link" href="/Home/CustomerInfo"><i class="fa fa-file  menu-icon"></i> <span class="side-link-text"> Customer Info</span></a>
+            <ul class="side-nav-links mt-4"> 
+                <li class="side-item">
+                    <a class="side-link" href="/index.html"><i class="fa fa-dashboard menu-icon"></i><span class="side-link-text"> Dashboard</span></a>
                 </li>
-                    <li class="side-item ">
-                        <a class="side-link" href="/Sims/Entities"><i class="fa fa-file  menu-icon"></i> <span class="side-link-text"> Entity</span></a>
-                    </li>
-                    <li class="side-item">
-                        <a class="side-link" href="/Home/Users"><i class="fa fa-user  menu-icon"></i> <span class="side-link-text"> Users</span></a>
-                    </li>
                 <li class="side-item ">
                     <div class="side-menu2">
                         <a class="side-link "><i class="fa fa-bar-chart  menu-icon"></i> <span class="side-link-text"> Multi Level <i class="fa-solid fa-angle-right float-end side-arrow mt-1"></i></span></a>
@@ -153,10 +140,121 @@
   <!-- Body -->
   <div class="main-container">
     <main role="main" class="pb-3 main-body">
-      <div class="page-header py-2">
+
+      <div class="page-header border-bottom py-2">
         <div class="page-title fs-12 text-secondary">Dashboard</div>
         <div class="page-title mt-2 fs-3">Dashboard</div>
-      </div>  
+      </div>
+      
+      <div class="row mt-4">
+        <div class="col-lg-5 col-md-6 col-sm-12 ">
+          <div class="card bg-gradient">
+              <div class="card-body">
+                  <div class="row g-3">
+                      <div class="col-xl-6" style="border-right: 1px solid #d9d9d9;">
+                          <span class="fs-6">Sub Accounts</span>
+                          <h1 style="font-size: 60px;">1</h1>
+                      </div>
+                      <div class="col-xl-6">
+                          <span class="fs-6">Total Sims</span>
+                          <h1 class="fs-1">200</h1>
+                          <div class="text-nowrap mt-3 border-top pt-3">
+                              <div class="badge bg-success-transparent text-success p-2 fs-12">Activated :</div>
+                              <span>198</span>
+                          </div>
+                          <div class="text-nowrap mt-3">
+                              <div class="badge bg-danger-transparent text-danger p-2 fs-12">Deactivated :</div>
+                              <span>198</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card bg-gradient mt-3">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                  <div>
+                      <span>Used SIMs</span>
+                      <h4 class="mt-2">14</h4>
+                  </div>
+                  <div class="flo-icon primary-bg-color text-light">
+                      <i class="fa fa-file fs-6"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="card bg-gradient mt-3">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                  <div>
+                      <span>Used IMSIs</span>
+                      <h4 class="mt-2">18</h4>
+                  </div>
+                  <div class="flo-icon secondary-bg-color text-light">
+                      <i class="fa-solid fa-sim-card fs-6"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="card bg-gradient mt-3">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                  <div>
+                      <span>SMS usage</span>
+                      <h4 class="mt-2">3</h4>
+                  </div>
+                  <div class="flo-icon primary-bg-color text-light">
+                      <i class="fa-regular fa-message fs-6"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="card bg-gradient mt-3">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                  <div>
+                      <span>Data usage</span>
+                      <h4 class="mt-2">1.72 GB</h4>
+                  </div>
+                  <div class="flo-icon secondary-bg-color text-light">
+                      <i class="fa-solid fa-wifi fs-6"></i>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12">
+          <div class="card bg-gradient h-100">
+            <div id="dash-chart1"></div>
+            <script>
+
+    
+        var options = {
+          series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
+          chart: {
+          type: 'polarArea',
+          height: '100%'
+        },
+        stroke: {
+          colors: ['#fff']
+        },
+        fill: {
+          opacity: 0.8
+        },
+        responsive: [{
+          breakpoint: 100,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#dash-chart1"), options);
+        chart.render();
+      
+                  
+            </script>
+          </div>
+        </div>
+      </div>
+      
     </main>
   </div>
     

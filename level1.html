@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard - Zenith</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
@@ -12,8 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+    <!-- PLUGINS CSS -->
+    <link href="./assets/plugins/datatables/datatables.min.css" rel="stylesheet" />
+    <link href="./assets/plugins/switcher/css/switcher.css" rel="stylesheet" />
+    <link href="./assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="./assets/plugins/toastr/toastr.min.css" rel="stylesheet" />
 
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- PLUGIN SCRIPTS -->
+    <script src="./assets/charts/apexcharts-bundle/dist/apexcharts.min.js"></script>
 </head>
 <body data-bs-theme="light" class="admin-theme">
 
@@ -37,15 +43,16 @@
           <div class="dropdown">
             <div class="d-flex align-items-center justify-content-center dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <div class="d-flex">
-                <img class="nav-profile-img primary-bg-color rounded-pill" src="./assets//images/profile-pic.jpg" alt="Profile Image" >
+                <img class="nav-profile-img primary-bg-color rounded-pill" src="./assets/images/avatar-1.png" alt="Profile Image" >
                 <div class="px-2 d-flex flex-column">
                   <a class="fs-16 nav-email">Jitender@wottaweb.com</a>
                   <span class="lh-10 fs-14">Fidenty BV</span>
                 </div>
               </div>
             </div>
-            <ul class="dropdown-menu w-100 mt-3 rounded-0 ms-2 shadow-sm">
-              <li><a class="dropdown-item" href="#">Action</a></li>
+            <ul class="dropdown-menu w-100 mt-3 rounded-0 ms-2 shadow-md border-0 rounded-2">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user menu-icon"></i> <span class="ms-3">Profile</span> </a></li>
+              <li><a class="dropdown-item" href="login.html"><i class="fa-solid fa-right-from-bracket menu-icon"></i><span class="ms-3"> Logout</span> </a></li>
               <li class="nav-item">
                 <div class="border rounded-1 d-flex m-1 p-1 flex-wrap justify-content-evenly">
                     <span class="rounded-1 primary-admin-bg px-3 py-3 me-1 set-theme" set-theme="admin-theme"></span>
@@ -67,24 +74,10 @@
   <div id="sidebar" class="secondary-bg-color sidebar">
     <span class="sidebar-toggle me-1 px-3 py-2 float-end fs-4"><i class="fa-solid fa-bars text-light"></i></span>
         <div class="side-nav p-3 mt-3">
-            <ul class="side-nav-links mt-4">
-                
-                    <li class="side-item">
-                        <a class="side-link" href="/index.html"><i class="fa fa-dashboard menu-icon"></i><span class="side-link-text"> Dashboard</span></a>
-                    </li>
-                    <li class="side-item ">
-                        <a class="side-link" href="/sims.html"><i class="fa fa-file  menu-icon"></i> <span class="side-link-text"> Sims</span></a>
-                    </li>
-                
-                <li class="side-item ">
-                    <a class="side-link" href="/Home/CustomerInfo"><i class="fa fa-file  menu-icon"></i> <span class="side-link-text"> Customer Info</span></a>
+            <ul class="side-nav-links mt-4"> 
+                <li class="side-item">
+                    <a class="side-link" href="/index.html"><i class="fa fa-dashboard menu-icon"></i><span class="side-link-text"> Dashboard</span></a>
                 </li>
-                    <li class="side-item ">
-                        <a class="side-link" href="/Sims/Entities"><i class="fa fa-file  menu-icon"></i> <span class="side-link-text"> Entity</span></a>
-                    </li>
-                    <li class="side-item">
-                        <a class="side-link" href="/Home/Users"><i class="fa fa-user  menu-icon"></i> <span class="side-link-text"> Users</span></a>
-                    </li>
                 <li class="side-item ">
                     <div class="side-menu2">
                         <a class="side-link "><i class="fa fa-bar-chart  menu-icon"></i> <span class="side-link-text"> Multi Level <i class="fa-solid fa-angle-right float-end side-arrow mt-1"></i></span></a>
@@ -157,5 +150,11 @@
     <script src="./assets/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/app.js"></script>
+    <script src="./assets/plugins/bootbox/bootbox.min.js"></script>
+    <script src="./assets/plugins/datatables/datatables.min.js"></script>
+    <script src="./assets/plugins/switcher/js/jquery.switcher.min.js"></script>
+    <script src="./assets/plugins/nprogress.js"></script>
+    <script src="./assets/plugins/toastr/toastr.min.js"></script>
+
 </body>
 </html>
