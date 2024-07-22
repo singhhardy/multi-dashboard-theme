@@ -8,8 +8,8 @@
     --secondary-color-user: #04192F;
     --primary-color-level-four: #40aaa2;
     --secondary-color-level-four: #30475f;
-    --primary-color-level-five: #228d28;
-    --secondary-color-level-five: #051402;
+    --primary-color-level-five: #36ae85;
+    --secondary-color-level-five: #193529;
 }
 
 body[data-bs-theme="dark"] {
@@ -50,7 +50,7 @@ body[data-bs-theme="dark"] {
     --primary-color: var(--primary-color-level-five);
     --secondary-color: var(--secondary-color-level-five);
     --text-color: var(--text-color);
-    --dark-theme: #081609;
+    --dark-theme: #1e2e29;
 }
 
 /* THEMES ENDS HERE */
@@ -97,6 +97,9 @@ a, span{
 
 .card {
     background: var(--bs-card-cap-bg) !important;
+}
+.card-title{
+    margin-bottom: 0 !important;
 }
 
 .dropdown-toggle::after{
@@ -370,7 +373,7 @@ display: none;
 .side-link-text {
     color: #fff !important;
     letter-spacing: .5px;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
