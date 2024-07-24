@@ -12,6 +12,8 @@ $(document).ready(function(){
     var storedTheme = localStorage.getItem('Theme')
     if (storedTheme) {
         $('body').addClass(storedTheme)
+    } else {
+        $('body').addClass('admin-theme')
     }
 
     $('.set-theme').on('click', function () {
